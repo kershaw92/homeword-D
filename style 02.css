@@ -1,0 +1,49 @@
+@charset "UTF-8"; /* UTF-8編碼，使中文不會產生亂碼*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); /* google雲端字體 思源黑體*/
+/* CSS Document */
+/* body */
+
+    
+    img{
+      width: 400px;
+      height: 260px;
+      position: absolute;
+      top:6%;
+      left:55%;
+    }
+    
+	iframe
+    {
+      width: 500px;
+      height: 300px;
+      position: absolute;
+      top:70%;
+      left:55%;
+    }
+    
+    div
+    {
+      background-color: rgb(3, 43, 73);
+	  height: 300px;
+    color: aliceblue;
+    }
+    footer
+    {
+      background-color: rgb(3, 43, 73);
+      color: aliceblue;
+    }
+    a{
+      
+      position: absolute;
+      top:55%;
+      left:55%;
+    }
+   
+    h3
+    {
+      position: absolute;
+      top:45%;
+      left:55%;
+    }
+   
+  
