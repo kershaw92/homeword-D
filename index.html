@@ -3,35 +3,40 @@
 <head> 
   <meta charset="utf-8">    
   <title>把你寫成我的歌/李沐</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="把你寫成我的歌 歌詞"> 
-  <link href="style.css" rel="stylesheet">  
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link href="style.css" rel="stylesheet"> 
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script>
+	$( function() {
+	  $( "#tabs" ).tabs();
+	} );
+	</script>
+   <script>
+	$(function() {
+	  $( "main" ).hide();
+	  $( "main" ).fadeIn(2000);
+	});
+  </script>
+  
 </head>
 
 <body style="background-color: rgb(225, 225, 214);color:rgb(2, 11, 18)">
-
-  <div class="block">
+	<div class="block">
    
-	<strong><h1>把你寫成我的歌</h1></strong>
-	<h2>詞 / Eric 周興哲  吳易緯  曲 / Eric 周興哲</h2>
-	<button type="button" id="addAnimate">按我 換我 動態效果</button>
-	
-  <nav class="navigation"> <!-- nav設定類別（class)為navigation-->
-     
-   </nav>
-    
-    </div> 
+		<strong><h1>把你寫成我的歌</h1></strong>
+		<h2>詞 / Eric 周興哲  吳易緯  曲 / Eric 周興哲</h2>
+		
+		</div> 
+	</div> 
 	<h3>其他歌曲</h3>
       
       <a href="index 02.html">IVE (아이브) - My Satisfaction</a>
-  <img src="https://cdn2.ettoday.net/images/4903/d4903084.jpg">
-</header>
-<iframe width="750" height="409" src="https://www.youtube.com/embed/4rHIDMun-qI?si=i4var6LXDtAkub89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="https://cdn2.ettoday.net/images/4903/d4903084.jpg">
+      </header>
+      <iframe width="750" height="409" src="https://www.youtube.com/embed/4rHIDMun-qI?si=i4var6LXDtAkub89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <main>
  
@@ -51,6 +56,8 @@
 	離別的  為什麼  因為遇見你  我才活著<br>
 	終於懂了</p><br>
 	
+
+	   
 	
 	
 	<p>你來了  你走了  沒留住你的我等著<br>
@@ -67,25 +74,22 @@
 	<p>這一刻  這首歌  願我們  更快樂<br>
 	相信我  微笑著  把你寫成我心裡的歌<br>
 	永遠唱著</p><br>
-	
-	</strong>
-	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-	<script>
-	 $('#addAnimate').on('click', function (){
-		$('.block').addClass('animate__animated animate__tada');
-	   
-	 }); 
-	  $('.block').on('click', function (){
-		$('.block').addClass('animate__animated animate__tada');
-	   
-	 });
-  	</script>
-	  <script>  //<!--加入 jQuary淡入語法-->
-		$(function () {
-			$("img").hide();
-			$("img").fadeIn(2000);
-		});
-</script>
+		<div id="tabs">
+		<ul>
+		  <li><a href="#tabs-1">金句1</a></li>
+		  <li><a href="#tabs-2">金句2</a></li>
+		  <li><a href="#tabs-3">金句3</a></li>
+		</ul>
+		<div id="tabs-1">
+		  <p>人生沒有不可能三個字，一旦你這麼認為，那就什麼都不會發生了。</p>
+		</div>
+		<div id="tabs-2">
+		  <p>每個人心裡應該都有一首歌，有時候聽了會哭，有時候聽了會笑。</p>
+		</div>
+		<div id="tabs-3">
+		  <p>因為她即將遇到一個對的人，這樣她一直以來的等待都超級值得。</p>
+		</div>
+	  </div>
 	
  
 </main>

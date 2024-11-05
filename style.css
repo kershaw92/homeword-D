@@ -3,13 +3,24 @@
 /* CSS Document */
 /* body */
 
+     #tabs{
+      width: 50%;       /* tabs 寬度設為50% */
+      margin:0px right;
+       
+    }
     
+    .ui-widget-content {
+        border: 1px solid #aaaaaa;         /* tabs 邊框設為寬1px灰色的實線 ，可自行修改 */
+        background: rgba(172,217,224,0.6); /* tabs 底色 設定為淺藍色，不透明度60%*/
+        color: aliceblue;                    /* tabs 文字的顏色*/
+    }
+  
     img{
       width: 350px;
       height: 350px;
       position: absolute;
-      top:70%;
-      left:55%
+      top:60%;
+      left:65%
     }
     body {
       background-image: url("https://storage.movie6.com/movie/22b3d_1_1650506622.jpg"); opacity: 0.9;
@@ -27,7 +38,7 @@
       height: 200px;
       position: absolute;
       top:1%;
-      left:55%;
+      left:65%;
     }
     
     div
@@ -42,18 +53,15 @@
       background-color: rgb(150, 177, 181);
       width: 1500px;
     }
-    a{
-      
-      position: absolute;
-      top:37.5%;
-      left:55%;
-    }
+  a{
+     float: right;
+  }
    
     h3
     {
       position: absolute;
-      top:29.5%;
-      left:55%;
+      top:26.5%;
+      left:65%;
     }
     main
     {
@@ -77,4 +85,4 @@
     a:active {
       color: blue;
     }
-  
+   
